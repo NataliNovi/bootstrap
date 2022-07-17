@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <title>Welcome Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .header {
+            display: flex;
+            height: 8vh;
+
+            justify-content: space-between;
+            align-items: center;
+            background: black;
+        }
+
+        .logo {
+            /* margin-left: 17vw;*/
+            margin: 0.3em 0.3em 0.3em 10vw;
+
+            color: white;
+            width: 50em;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            width: 20em;
+            margin-right: 10vw;
+            color: white;
+        }
+
+        .home {
+            color: white;
+            font-weight: bold;
+            margin: 0.3em;
+        }
+
+        .about {
+            color: white;
+            margin: 0.3em;
+
+        }
+
+        .services {
+            color: white;
+            margin: 0.3em;
+
+        }
+
+        .contact {
+            color: white;
+            margin: 0.3em;
+
+        }
+
+
+
+        .jumbotron {
+            margin-top: 2.5rem;
+        }
+
+        .btn {
+            background-color: rgb(118, 106, 224);
+            color: white;
+        }
+
+
+        .container {
+            display: flex;
+            align-content: space-between;
+            max-width: 82vw;
+
+            /*margin-left: 7vw;*/
+        }
+
+        .card {
+
+            margin: 0.3em;
+        }
+
+        .img {
+            width: 2vw;
+            margin: 0 0.5vh 0 0.5vh;
+            background: white;
+            border-radius: 1vh;
+        }
+
+
+
+        .footer {
+            display: flex;
+            height: 12vh;
+            background: black;
+            color: white;
+
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 6vh;
+        }
+
+        @media screen and (max-width: 575px) {
+            .header {
+                display: block;
+                height: 12vh;
+                font-size: large;
+            }
+
+            .logo {
+
+                margin: 0.3em 0.3em 0.3em 1.5vw;
+
+                color: white;
+                width: 20em;
+            }
+
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                width: 0em;
+                margin-right: 1.5vw;
+                color: white;
+            }
+
+            .container {
+                display: block;
+                max-width: 90vw;
+                margin-left: 0.5rem;
+                margin-right: 1rem;
+                padding-right: 0rem;
+
+
+            }
+
+            /*.card {
+                margin-left: 0.5em;
+
+
+            }*/
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            .header {
+                display: block;
+                height: 12vh;
+                font-size: large;
+            }
+
+            .container {
+                display: block;
+                width: 100%;
+
+
+            }
+
+            /*.card {
+                margin-left: 2em;
+
+
+            }*/
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="logo">Start Bootstrap</div>
+
+        <div class="menu">
+            <a class="home" href="home.html"> Home</a>
+            <a class="about" href="about.html"> About</a>
+            <a class="services" href="services.html">Services</a>
+            <a class="contact" href="contact.html">Contact</a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">A Warm Welcome!</h1>
+                <p class="lead">Это простой пример блока с компонентом в стиле jumbotron для привлечения
+                    дополнительного внимания к содержанию или информации.</p>
+
+                <p class="lead">
+                    <a class="btn btn-lg" href="#" role="button">Call to action!</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="card text-center" style="width: 21rem;">
+                <img class="card-img-top" src="./photo/blue.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Flowers</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                    <a href="#" class="btn">Find out more!</a>
+                </div>
+            </div>
+
+
+            <div class="card text-center" style="width: 21rem;">
+                <img class="card-img-top1" src="./photo/blue.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Flowers</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                    <a href="#" class="btn">Find out more!</a>
+                </div>
+            </div>
+
+
+
+            <div class="card text-center" style="width: 21rem;">
+                <img class="card-img-top1" src="./photo/blue.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Flowers</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                    <a href="#" class="btn">Find out more!</a>
+                </div>
+            </div>
+
+
+            <div class="card text-center" style="width: 21rem;">
+                <img class="card-img-top" src="./photo/blue.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Flowers</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of the card's content.</p>
+                    <a href="#" class="btn">Find out more!</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        </div>
+
+        </div>
+
+        </div>
+
+
+
+
+
+    </main>
+
+    <footer class="footer1"></footer>
+    <footer class="footer">Copyright <img class="img" src="./photo/key-icon.png" />Your Website 2019
+    </footer>
+
+    </div>
+</body>
+
+</html>
