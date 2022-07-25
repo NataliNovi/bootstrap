@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <title>BEM2bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .container {
+
+            max-width: 100vw;
+            max-height: 100vh;
+        }
+
+        .header__browser {
+            justify-content: center;
+        }
+
+        .img__header__browser {
+            width: 100vw;
+        }
+
+
+        .header__logo__btn {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header__logo {
+            margin-left: 5em;
+            margin-top: 1em;
+        }
+
+        .header__btn {
+            margin-right: 5em;
+            border-radius: 2em;
+            height: 2.6em;
+            width: 9em;
+            font-size: 1.3em;
+            color: white;
+            background: rgb(21, 21, 173);
+            border: rgb(21, 21, 173);
+        }
+
+
+        h1 {
+
+            font-size: 4vw;
+            font-weight: 700;
+            margin-left: 2em;
+            margin-top: 0.6em;
+
+        }
+
+
+
+        .container__main__Pict-card {
+            justify-content: space-between;
+            margin-left: 5em;
+            margin-right: -5em;
+        }
+
+        .card-img-top__Container {
+            max-width: 20em;
+        }
+
+        .main__Pict-card__card1 {
+            border: #BB2247 solid 0.1em;
+            padding: 2em;
+            margin-top: 2em;
+            margin-right: 2em;
+
+        }
+
+        .main__Pict-card__card2 {
+            margin-top: 2em;
+            margin-right: 2em;
+            padding: 2em;
+        }
+
+        .main__Pict-card__card3 {
+            margin-top: 2em;
+            padding: 2em;
+            margin-right: 1em;
+        }
+
+        .main__small-card__card1 {
+            border: #BB2247 solid 0.1em;
+            margin-top: -2em;
+            margin-right: 2em;
+            margin-left: -1em;
+            padding: 2em 2em 2em 3em;
+
+        }
+
+        .main__small-card__card2 {
+            margin-top: -2em;
+            margin-right: 2em;
+            padding: 2em;
+
+        }
+
+
+
+        .form {
+            width: 19em;
+            border: #BB2247 solid 0.1em;
+            background: #EC615B;
+            margin-top: 0em;
+            margin-left: 3.5em;
+
+        }
+
+        .form__card {
+            width: 15em;
+            margin-top: 0em;
+            margin-left: 2em;
+            background: white;
+            align-items: center;
+            height: 2em;
+
+        }
+
+        .form__input-group {
+            align-items: center;
+        }
+
+        .form__input-group__news {
+            font-size: 2vw;
+            font-weight: 600;
+            margin-left: 1.2em;
+            margin-top: 1em;
+            color: white;
+
+        }
+
+        .btn-mail {
+            border-radius: 2em;
+            height: 2.6em;
+            width: 10em;
+            font-size: 0.5em;
+            color: white;
+            background: rgb(21, 21, 173);
+            border: rgb(21, 21, 173);
+            margin-top: 2em;
+            margin-left: 4em;
+            margin-bottom: 2em;
+
+        }
+
+
+        .form__card__card-body {
+            height: 3em;
+            align-items: center;
+
+        }
+
+        .form__card__email {
+            margin-left: 1em;
+            padding-top: 1em;
+        }
+
+
+
+        @font-face {
+            font-family: 'Roboto Slab' serif;
+            src: url(./bem/RobotoSlab-VariableFont_wght.ttf);
+        }
+
+
+        .container__footer {
+            margin-left: -3em;
+            width: 100vw;
+            height: 15vh;
+
+        }
+
+
+        .nav {
+
+
+            display: flex;
+            font-size: 20px;
+            font-family: 'Roboto Slab', serif;
+            margin-left: 9vw;
+            margin-right: 2vw;
+            padding: 2em;
+        }
+
+        .nav__item__possibility {
+            margin-right: 1.5em;
+        }
+
+        .nav__item__where {
+            margin-right: 1.5em;
+        }
+
+        .nav__item__dostavka {
+            margin-right: 1.5em;
+        }
+
+        .nav__item__help {
+            margin-right: 1.5em;
+        }
+
+        @media screen and (max-width: 420px) {
+            .container {
+
+                max-width: 100vw;
+                max-height: 100vh;
+            }
+
+            .header__browser {
+                justify-content: space-between;
+            }
+
+            .img__header__browser {
+                width: 100vw;
+            }
+
+
+            .header__logo__btn {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .header__logo {
+                margin-left: 4rem;
+                margin-top: 1em;
+            }
+
+            .header__btn {
+                margin-right: -3rem;
+                border-radius: 2em;
+                height: 2.6em;
+                width: 24vw;
+                font-size: 3vw;
+                color: white;
+                background: rgb(21, 21, 173);
+                border: rgb(21, 21, 173);
+            }
+
+
+            h1 {
+
+                font-size: 4vw;
+                font-weight: 700;
+                margin-left: 4.5rem;
+                margin-top: 2em;
+
+            }
+
+
+
+            .container__main__Pict-card {
+                justify-content: space-between;
+                margin-left: 7rem;
+                margin-right: -5em;
+            }
+
+            .card-img-top__Container {
+                max-width: 20em;
+            }
+
+            .main__Pict-card__card1 {
+                border: #BB2247 solid 0.1em;
+                padding: 2em;
+                margin-top: 2em;
+                margin-right: 2em;
+                margin-left: -3em;
+
+            }
+
+            .main__Pict-card__card2 {
+                margin-top: 2em;
+                margin-right: 2em;
+                padding: 2em;
+                margin-left: -3em;
+            }
+
+            .main__Pict-card__card3 {
+                margin-top: 2em;
+                padding: 2em;
+                margin-right: 1em;
+                margin-left: -3em;
+            }
+
+            .main__small-card__card1 {
+                border: #BB2247 solid 0.1em;
+                margin-top: -2em;
+                margin-right: 2em;
+                margin-left: -2em;
+                padding: 1em 1em 1em 1em;
+
+            }
+
+            .main__small-card__card2 {
+                margin-top: -2em;
+                margin-right: 2em;
+                margin-left: -3em;
+                padding: 2em;
+
+            }
+
+
+
+            .form {
+                width: 19em;
+                border: #BB2247 solid 0.1em;
+                background: #EC615B;
+                margin-top: 0em;
+                margin-left: 0em;
+
+            }
+
+            .form__card {
+                width: 15em;
+                margin-top: 0em;
+                margin-left: 2em;
+                background: white;
+                align-items: center;
+                height: 2em;
+
+            }
+
+            .form__input-group {
+                align-items: center;
+            }
+
+            .form__input-group__news {
+                font-size: 4vw;
+                font-weight: 600;
+                margin-left: 2em;
+                margin-top: 1em;
+                color: white;
+
+            }
+
+            .btn-mail {
+                border-radius: 2em;
+                height: 2.6em;
+                width: 10em;
+                font-size: 3vw;
+                color: white;
+                background: rgb(21, 21, 173);
+                border: rgb(21, 21, 173);
+                margin-top: 2em;
+                margin-left: 3em;
+                margin-bottom: 2em;
+
+            }
+
+
+            .form__card__card-body {
+                height: 3em;
+                align-items: center;
+
+            }
+
+            .form__card__email {
+                margin-left: 1em;
+                padding-top: 1em;
+            }
+
+
+
+            @font-face {
+                font-family: 'Roboto Slab' serif;
+                src: url(./bem/RobotoSlab-VariableFont_wght.ttf);
+            }
+
+
+            .container__footer {
+                margin-left: 0;
+                width: 100vw;
+
+            }
+
+
+            .nav {
+                display: inline-flex;
+                font-size: 4vw;
+                font-family: 'Roboto Slab', serif;
+                margin-left: 4em;
+                margin-right: 0vw;
+                padding: 2em;
+            }
+
+            .nav__item__possibility {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__where {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__dostavka {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__help {
+                margin-right: 1.5em;
+            }
+        }
+
+        @media screen and (min-width: 420px) and (max-width: 767px) {
+            .container {
+
+                max-width: 100vw;
+                max-height: 100vh;
+                justify-content: center;
+            }
+
+            .header__browser {
+                justify-content: center;
+            }
+
+            .img__header__browser {
+                width: 100%;
+            }
+
+
+            .header__logo__btn {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .header__logo {
+                margin-left: 1em;
+                margin-top: 1em;
+            }
+
+            .header__btn {
+                margin-right: 0em;
+                border-radius: 2em;
+                height: 2.6em;
+                width: 24vw;
+                font-size: 3vw;
+                color: white;
+                background: rgb(21, 21, 173);
+                border: rgb(21, 21, 173);
+            }
+
+
+            h1 {
+
+                font-size: 4vw;
+                font-weight: 700;
+                margin-left: 4em;
+                margin-top: 2em;
+
+            }
+
+
+
+            .container__main__Pict-card {
+                justify-content: space-between;
+                margin-left: 5em;
+                margin-right: -5em;
+            }
+
+            .card-img-top__Container {
+                max-width: 20em;
+            }
+
+            .main__Pict-card__card1 {
+                border: #BB2247 solid 0.1em;
+                padding: 2em;
+                margin-top: 2em;
+                margin-right: 0em;
+                margin-left: 0em;
+
+            }
+
+            .main__Pict-card__card2 {
+                margin-top: 2em;
+                margin-right: 2em;
+                padding: 2em;
+                margin-left: 0em;
+            }
+
+            .main__Pict-card__card3 {
+                margin-top: 2em;
+                padding: 2em;
+                margin-right: 1em;
+                margin-left: 0em;
+            }
+
+            .main__small-card__card1 {
+                border: #BB2247 solid 0.1em;
+                margin-top: -2em;
+                margin-right: 2em;
+                margin-left: 0em;
+                padding: 2em 2em 2em 3em;
+
+            }
+
+            .main__small-card__card2 {
+                margin-top: -2em;
+                margin-right: 2em;
+                margin-left: 0em;
+                padding: 2em;
+
+            }
+
+
+
+            .form {
+                width: 19em;
+                border: #BB2247 solid 0.1em;
+                background: #EC615B;
+                margin-top: 0em;
+                margin-left: 2em;
+
+            }
+
+            .form__card {
+                width: 15em;
+                margin-top: 0em;
+                margin-left: 2em;
+                background: white;
+                align-items: center;
+                height: 2em;
+
+            }
+
+            .form__input-group {
+                align-items: center;
+            }
+
+            .form__input-group__news {
+                font-size: 4vw;
+                font-weight: 600;
+                margin-left: 2em;
+                margin-top: 1em;
+                color: white;
+
+            }
+
+            .btn-mail {
+                border-radius: 2em;
+                height: 2.6em;
+                width: 10em;
+                font-size: 3vw;
+                color: white;
+                background: rgb(21, 21, 173);
+                border: rgb(21, 21, 173);
+                margin-top: 2em;
+                margin-left: 3em;
+                margin-bottom: 2em;
+
+            }
+
+
+            .form__card__card-body {
+                height: 3em;
+                align-items: center;
+
+            }
+
+            .form__card__email {
+                margin-left: 1em;
+                padding-top: 1em;
+            }
+
+
+
+            @font-face {
+                font-family: 'Roboto Slab' serif;
+                src: url(./bem/RobotoSlab-VariableFont_wght.ttf);
+            }
+
+
+            .container__footer {
+                margin-left: 0;
+                width: 100vw;
+
+            }
+
+
+            .nav {
+                display: inline-flex;
+                font-size: 4vw;
+                font-family: 'Roboto Slab', serif;
+                margin-left: 0em;
+                margin-right: 0vw;
+                padding: 2em;
+            }
+
+            .nav__item__possibility {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__where {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__dostavka {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__help {
+                margin-right: 1.5em;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width:1023px) {
+            .container {
+
+                max-width: 100vw;
+                max-height: 100vh;
+            }
+
+            .header__browser {
+                justify-content: center;
+            }
+
+            .img__header__browser {
+                width: 100vw;
+                margin-left: 8em;
+            }
+
+
+            .header__logo__btn {
+                display: flex;
+                justify-content: space-between;
+                width: 100vw;
+
+            }
+
+            .header__logo {
+                margin-left: 9rem;
+                margin-top: 1em;
+            }
+
+            .header__btn {
+                margin-right: -6rem;
+                margin-left: 0em;
+                border-radius: 2em;
+                height: 2.6em;
+                width: 9em;
+                font-size: 1.3em;
+                color: white;
+                background: rgb(21, 21, 173);
+                border: rgb(21, 21, 173);
+            }
+
+
+            h1 {
+
+                font-size: 5vw;
+                font-weight: 700;
+                margin-left: 4em;
+                margin-top: 0.6em;
+
+            }
+
+            .container__main__Pict-card {
+                justify-content: space-between;
+                margin-left: 10em;
+                margin-right: -11em;
+            }
+
+            /*  .card-img-top__Container {
+                max-width: 11vw;
+            }*/
+
+            .main__Pict-card__card1 {
+                border: #BB2247 solid 0.1em;
+                padding: 1em;
+                margin-top: 1em;
+                margin-right: 2em;
+                width: 15.6rem;
+
+
+            }
+
+            .main__Pict-card__card2 {
+                margin-top: 2em;
+                margin-right: 1em;
+                margin-left: 0em;
+                padding: 0em;
+                max-width: 19rem;
+            }
+
+            .main__Pict-card__card3 {
+                margin-top: 2em;
+                padding: 0em;
+                margin-right: 1em;
+                max-width: 19rem;
+            }
+
+            .main__small-card__card1 {
+                border: #BB2247 solid 0.1em;
+                margin-top: -0.5em;
+                margin-right: -2em;
+                margin-left: 0em;
+                padding: 1em 0em 1em 0em;
+                max-width: 16rem;
+
+            }
+
+            .main__small-card__card2 {
+                margin-top: -1.5em;
+                margin-right: 0em;
+                margin-left: -2em;
+                padding: 2em;
+                max-width: 19rem;
+
+            }
+
+
+
+            .form {
+                max-width: 13rem;
+                border: #BB2247 solid 0.1em;
+                background: #EC615B;
+                margin-top: 2em;
+                margin-left: 1em;
+                margin-right: 3em;
+                padding: 1em;
+
+            }
+
+            .form__card {
+                max-width: 10rem;
+                margin-top: 0em;
+                margin-left: 1em;
+                background: white;
+                align-items: center;
+                height: 2em;
+
+            }
+
+            .form__input-group {
+                align-items: center;
+            }
+
+            .form__input-group__news {
+                font-size: 2vw;
+                font-weight: 600;
+                margin-left: 1.2em;
+                margin-top: 1em;
+                color: white;
+
+            }
+
+            .btn-mail {
+                border-radius: 2em;
+                height: 2.6em;
+                width: 10em;
+                font-size: 0.5em;
+                color: white;
+                background: rgb(21, 21, 173);
+                border: rgb(21, 21, 173);
+                margin-top: 2em;
+                margin-left: 2em;
+                margin-bottom: 2em;
+
+            }
+
+
+            .form__card__card-body {
+                height: 3em;
+                align-items: center;
+
+            }
+
+            .form__card__email {
+                margin-left: 1em;
+                padding-top: 1em;
+            }
+
+
+
+            @font-face {
+                font-family: 'Roboto Slab' serif;
+                src: url(./bem/RobotoSlab-VariableFont_wght.ttf);
+            }
+
+
+            .container__footer {
+                margin-left: 3em;
+                width: 100vw;
+                height: 15vh;
+
+            }
+
+
+            .nav {
+
+
+                display: flex;
+                font-size: 20px;
+                font-family: 'Roboto Slab', serif;
+                margin-left: 9vw;
+                margin-right: 2vw;
+                padding: 2em;
+            }
+
+            .nav__item__possibility {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__where {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__dostavka {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__help {
+                margin-right: 1.5em;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .container {
+
+                max-width: 100vw;
+                max-height: 100vh;
+            }
+
+            .header__browser {
+                justify-content: center;
+            }
+
+            .img__header__browser {
+                width: 100vw;
+                margin-left: 9em;
+            }
+
+
+            .header__logo__btn {
+                display: flex;
+                justify-content: space-between;
+                width: 100vw;
+
+            }
+
+            .header__logo {
+                margin-left: 10rem;
+                margin-top: 1em;
+            }
+
+            .header__btn {
+                margin-right: -6rem;
+                margin-left: 0em;
+                border-radius: 2em;
+                height: 2.6em;
+                width: 9em;
+                font-size: 1.3em;
+                color: white;
+                background: rgb(21, 21, 173);
+                border: rgb(21, 21, 173);
+            }
+
+
+            h1 {
+
+                font-size: 5vw;
+                font-weight: 700;
+                margin-left: 4em;
+                margin-top: 0.6em;
+
+            }
+
+            .container__main__Pict-card {
+                justify-content: space-between;
+                margin-left: 10em;
+                margin-right: -11em;
+            }
+
+            /*  .card-img-top__Container {
+                max-width: 11vw;
+            }*/
+
+            .main__Pict-card__card1 {
+                border: #BB2247 solid 0.1em;
+                padding: 1em;
+                margin-top: 1.3em;
+                margin-right: 2em;
+                width: 19.6rem;
+
+
+            }
+
+            .main__Pict-card__card2 {
+                margin-top: 2em;
+                margin-right: 1em;
+                margin-left: 0em;
+                padding: 0em;
+                max-width: 18rem;
+            }
+
+            .main__Pict-card__card3 {
+                margin-top: 2em;
+                padding: 0em;
+                margin-right: 1em;
+                max-width: 18rem;
+            }
+
+            .main__small-card__card1 {
+                border: #BB2247 solid 0.1em;
+                margin-top: 0em;
+                margin-right: 0em;
+                margin-left: 0em;
+                padding: 0.5em 0em 1em 0em;
+                max-width: 19.6rem;
+
+            }
+
+            .main__small-card__card2 {
+                margin-top: -1.5em;
+                margin-right: 0em;
+                margin-left: -2em;
+                padding: 2em;
+                max-width: 19rem;
+
+            }
+
+
+
+            .form {
+                max-width: 17rem;
+                border: #BB2247 solid 0.1em;
+                background: #EC615B;
+                margin-top: 2em;
+                margin-left: 1em;
+                margin-right: 3em;
+                padding: 1em;
+
+            }
+
+            .form__card {
+                max-width: 10rem;
+                margin-top: 0em;
+                margin-left: 1em;
+                background: white;
+                align-items: center;
+                height: 2em;
+
+            }
+
+            .form__input-group {
+                align-items: center;
+            }
+
+            .form__input-group__news {
+                font-size: 2vw;
+                font-weight: 600;
+                margin-left: 1.2em;
+                margin-top: 1em;
+                color: white;
+
+            }
+
+            .btn-mail {
+                border-radius: 2em;
+                height: 2.6em;
+                width: 10em;
+                font-size: 0.5em;
+                color: white;
+                background: rgb(21, 21, 173);
+                border: rgb(21, 21, 173);
+                margin-top: 2em;
+                margin-left: 2em;
+                margin-bottom: 2em;
+
+            }
+
+
+            .form__card__card-body {
+                height: 3em;
+                align-items: center;
+
+            }
+
+            .form__card__email {
+                margin-left: 1em;
+                padding-top: 1em;
+            }
+
+
+
+            @font-face {
+                font-family: 'Roboto Slab' serif;
+                src: url(./bem/RobotoSlab-VariableFont_wght.ttf);
+            }
+
+
+            .container__footer {
+                margin-left: 3em;
+                width: 100vw;
+                height: 15vh;
+
+            }
+
+
+            .nav {
+
+
+                display: flex;
+                font-size: 20px;
+                font-family: 'Roboto Slab', serif;
+                margin-left: 9vw;
+                margin-right: 2vw;
+                padding: 2em;
+            }
+
+            .nav__item__possibility {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__where {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__dostavka {
+                margin-right: 1.5em;
+            }
+
+            .nav__item__help {
+                margin-right: 1.5em;
+            }
+        }
+    </style>
+
+<body>
+
+    <div class="container">
+
+        <header class="container__header">
+            <div class="header__browser">
+                <img class="img__header__browser" src="./bem/browser.png" />
+            </div>
+
+
+            <div class="header__logo__btn">
+                <img class="header__logo" src="./bem/logo.png" />
+
+                <button type="button" class="header__btn">КОРЗИНА
+                    <span class="ico_Pict_Container"> <img class="ico" src="./bem/ico.png"></span></button>
+            </div>
+
+        </header>
+
+
+
+        <main class="container__main">
+            <h1>ВОЗМОЖНОСТИ</h1>
+
+            <div class="container__main__Pict-card">
+                <div class="row">
+
+                    <div class="col-sm-12  col-md-4 col-lg-4">
+                        <div class="main__Pict-card__card1" style>
+                            <span class="card-img-top__Container"> <img src="./bem/illust1.png" class="card-img-top"
+                                    alt="..."></span>
+                            <div class="card-body">
+                                <h5 class="card-title card-title1">БЕЗ ПРОВОДОВ</h5>
+                                <p class="card-text card-text1">Шлем работает без проводов. Не нужен ни компьютер,
+                                    ни внешнее
+                                    питание, ни
+                                    большое помещение, чтобы расставить трекеры.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  col-md-4 col-lg-4">
+
+                        <div class="main__Pict-card__card2" style>
+                            <span class="card-img-top__Container"> <img src="./bem/illust2.png" class="card-img-top"
+                                    alt="..."></span>
+                            <div class="card-body">
+                                <h5 class="card-title card-title1">БЕЗ КОМПЬЮТЕРА</h5>
+                                <p class="card-text card-text1">Современным VR-шлемам нужен мощный компьютер, чтобы
+                                    запускать игры. Наш
+                                    шлем запускает игры из облака, поэтому просто наслаждайтесь.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="main__Pict-card__card3" style>
+                            <span class="card-img-top__Container"><img src="./bem/illust3.png" class="card-img-top"
+                                    alt="..."></span>
+                            <div class="card-body">
+                                <h5 class="card-title">ДО 10 ЧАСОВ РАБОТЫ</h5>
+                                <p class="card-text">Несмотря на компактность и производительность, шлем может
+                                    работать до 10
+                                    часов - даже, если вы играете в самые ресурсоемкие игры.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12  col-md-4 col-lg-4">
+                        <div class="main__small-card__card1" style>
+                            <div class="card-body">
+                                <h5 class="card-title">СОТНИ ИГР</h5>
+                                <p class="card-text">Уже сейчас вам доступно более сотни игр: от высокобюджетных
+                                    ААА-тайтлов
+                                    до
+                                    маленьких независимых проектов. Скоро их станет еще больше.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  col-md-4 col-lg-4">
+                        <div class="main__small-card__card2" style>
+                            <div class="card-body">
+                                <h5 class="card-title">ПОЧТИ ДАРОМ</h5>
+
+                                <p class="card-text">По сравнению с другими VR-шлемами наш стоит гораздо
+                                    меньше. И вы
+                                    существенно экономите на мощном компьютере.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  col-md-4 col-lg-4">
+                        <div class="form">
+
+                            <div class="form__input-group">
+                                <p class="form__input-group__news">НОВОСТИ</p>
+                            </div>
+                            <div class="form__card">
+
+                                <span class="form__card__email">Эл. почта</span>
+
+                            </div>
+
+                            <button type="button" class="form__btn btn-mail">ПОДПИСАТЬСЯ</button>
+
+                        </div>
+                    </div>
+
+        </main>
+
+        <footer class="container__footer">
+
+            <ul class="nav">
+
+                <li class="nav__item__possibility"><a class="link">Возможности</a> </li>
+                <li class="nav__item__where"><a class="link">Где купить</a> </li>
+                <li class="nav__item__dostavka"><a class="link">Доставка</a> </li>
+                <li class="nav__item__help"><a class="link">Помощь</a> </li>
+
+            </ul>
+
+
+
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
